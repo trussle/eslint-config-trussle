@@ -1,0 +1,7 @@
+{
+  "name": "trussle-eslint",
+  "version": "1.0.0",
+  "description": "ESLint configuration for Trussle",
+  "author": "Team Trussle",
+  "license": "ISC"
+}
