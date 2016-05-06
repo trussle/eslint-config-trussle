@@ -29,3 +29,12 @@ module.exports = {
 ```
 
 ESLint allows nested configuration, allowing you to choose different configurations for your tests, server-side and client-side code. Check out [their website](http://eslint.org/docs/user-guide/configuring#using-configuration-files) for documentation.
+
+## Changing the Rules
+
+- Have a good reason for changing the rule, and write it as a comment near the rule in `.eslint.js`.
+- Bump the version number: 
+  - `0.0.0 => 1.0.1` for rule configuration changes.
+  - `0.0.x => 0.1.x` for added or removed rules. 
+  - `0.x.x => 1.x.x` for major changes (new ESLint version, etc.).
+- Commit, push, and update the package in the project you're working on.
