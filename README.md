@@ -14,7 +14,7 @@ Next, create a file `eslintrc.js` in the root directory of your project pointing
 
 ```js
 module.exports = {
-  extends: "./node_modules/trussle-eslint/.eslintrc.js"
+  extends: "./node_modules/trussle-eslint/.eslintrc.js",
 
   // You will need to set up an environment:
   // see http://eslint.org/docs/user-guide/configuring#specifying-environments
