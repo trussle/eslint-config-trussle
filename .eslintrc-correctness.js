@@ -3,18 +3,6 @@
 // All of these rules are to make sure we don't make mistakes!
 
 module.exports = {
-
-  // Use ES6 where possible.
-  parserOptions: {
-    ecmaVersion: 6
-  },
-  env: {
-    es6: true
-  },
-
-  // Take the defaults!
-  "extends": "eslint:recommended",
-
   "rules": {
 
     // All variables should be used.

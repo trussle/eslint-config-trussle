@@ -5,7 +5,16 @@
 
 module.exports = {
 
-  "extends": [
+  // Use ES6 where possible.
+  parserOptions: {
+    ecmaVersion: 6
+  },
+  env: {
+    es6: true
+  },
+
+  extends: [
+    "eslint:recommended",
     "./.eslintrc-style.js",
     "./.eslintrc-readability.js",
     "./.eslintrc-correctness.js"
