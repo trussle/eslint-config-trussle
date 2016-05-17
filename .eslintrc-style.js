@@ -6,18 +6,18 @@ module.exports = {
     // We use 2-space indentation.
     "indent": ["error", 2],
 
-    // Always use double quotes (or backticks when templating).
-    "quotes": ["error", "double"],
+    // All quotes are allowed.
+    "quotes": ["off"],
 
     // Always use semicolons.
     "semi": ["error", "always"],
 
-    // Always add a comma to the end of a multi-line block or array.
-    // This keeps our diffs clean of commas.
-    "comma-dangle": ["error", "always-multiline"],
+    // Keep commas consistent between JS and JSON.
+    "comma-dangle": ["error", "never"],
 
-    // Always put parentheses around arrow function params.
-    "arrow-parens": "error",
+    // (foo) => { ... } and
+    //  foo  => { ... } are permitted.
+    "arrow-parens": "off",
 
     // Avoid [ 1 ] and foo[ 1 ]. Prefer [1].
     "array-bracket-spacing": "error",

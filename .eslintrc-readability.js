@@ -39,7 +39,7 @@ module.exports = {
     "global-require": "error",
 
     // Avoid callback hell.
-    "max-nested-callbacks": ["error", 5],
+    "max-nested-callbacks": ["warn", 5],
 
     // If you're making something `new`-able,
     // use a capital letter.
@@ -52,8 +52,9 @@ module.exports = {
     // Avoid `else` with only an `if` in it. (Use `else if`!)
     "no-lonely-if": "error",
 
-    // Who would use nested ternary statements?!
-    "no-nested-ternary": "error",
+    // Nested ternary statements are useful, for example when setting ranges:
+    //   var roundup = (n < 100) ? 100 : (n < 1000) ? 1000 : n;
+    "no-nested-ternary": "off",
 
     // Tighten up ternaries if possible. Prefer:
     //

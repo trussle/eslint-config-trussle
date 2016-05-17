@@ -88,8 +88,10 @@ module.exports = {
     // It's a really bad idea.
     "no-class-assign": ["error"],
 
-    // Use arrow functions in callbacks.
-    // This ensures we know what `this` is, primarily.
-    "prefer-arrow-callback": ["error"],
+    // There are sometimes uses for `function`.
+    // For instance, it can be used to show that the function
+    // doesn't need a `this`.
+    "prefer-arrow-callback": ["off"],
+    
   }
 };
