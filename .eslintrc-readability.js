@@ -18,7 +18,7 @@ module.exports = {
 
     // Prefer foo.bar over foo["bar"] where possible.
     // This is easier to read.
-    "dot-notation": "error",
+    "dot-notation": "warn",
 
     // All numbers should have a name to ensure other people
     // understand what they are for.
@@ -27,7 +27,7 @@ module.exports = {
     // and people know what it is.
     //
     // Magic numbers should be const'ed.
-    "no-magic-numbers": ["warn", { "ignore": [1], "enforceConst": true }],
+    "no-magic-numbers": ["warn", { "ignore": [0, 1], "enforceConst": true }],
 
     // Don't allow use of a variable before it is defined.
     // This stops us using the hoisting nature of JavaScript
@@ -43,14 +43,14 @@ module.exports = {
 
     // If you're making something `new`-able,
     // use a capital letter.
-    "new-cap": "error",
+    "new-cap": "warn",
 
     // It turns out that `var x = new Foo` is the same as `var x = new Foo()`.
     // Let's not use that.
     "new-parens": "error",
 
     // Avoid `else` with only an `if` in it. (Use `else if`!)
-    "no-lonely-if": "error",
+    "no-lonely-if": "warn",
 
     // Nested ternary statements are useful, for example when setting ranges:
     //   var roundup = (n < 100) ? 100 : (n < 1000) ? 1000 : n;
@@ -63,7 +63,7 @@ module.exports = {
     // over
     // 
     // x ? true : false
-    "no-unneeded-ternary": "error",
+    "no-unneeded-ternary": "warn",
 
     // Don't use `new` with Function, Array, Object, String, Number or Boolean.
     // Use the literal syntax instead.
@@ -73,55 +73,55 @@ module.exports = {
     "no-new-object": "error",
 
     // Avoid `foo .bar`.
-    "no-whitespace-before-property": "error",
+    "no-whitespace-before-property": "warn",
 
     // Avoid `fn ()`; use `fn()`.
-    "no-spaced-func": "error",
+    "no-spaced-func": "warn",
 
     // Use (a, b) for comma spacing. (Not (a ,b) or (a , b) or (a,b).)
-    "comma-spacing": "error",
+    "comma-spacing": "warn",
 
     // Enforce operator shorthand: `x = x + 1` => `x += 1`.
-    "operator-assignment": "error",
+    "operator-assignment": "warn",
 
     // Ensure a space between function() and {}.
-    "space-before-blocks": ["error", "always"],
+    "space-before-blocks": ["warn", "always"],
 
     // Ensure there is no space between function and ().
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": ["warn", "never"],
 
     // Require a space between infix operators.
-    "space-infix-ops": "error",
+    "space-infix-ops": "warn",
 
     // Disallow `! x`. (Use `!x`.)
-    "space-unary-ops": "error",
+    "space-unary-ops": "warn",
 
     // Avoid confusing functions unless bracketed.
-    "no-confusing-arrow": ["error", { allowParens: true }],
+    "no-confusing-arrow": ["warn", { allowParens: true }],
 
     // Put all imports from a module on the same line.
-    "no-duplicate-imports": "error",
+    "no-duplicate-imports": "warn",
 
     // Avoid computed keys with constants.
-    "no-useless-computed-key": "error",
+    "no-useless-computed-key": "warn",
 
     // Avoid constructors that mimic the default constructor.
-    "no-useless-constructor": "error",
+    "no-useless-constructor": "warn",
 
     // Prefer `{ foo }` to `{ foo: foo }`.
-    "object-shorthand": "error",
+    "object-shorthand": "warn",
 
     // Avoid `var`: use `let` or `const` instead.
-    "no-var": "error",
+    "no-var": "warn",
 
     // Use template strings for concatenation.
-    "prefer-template": "error",
+    "prefer-template": "warn",
 
     // If there is a `return` in an if block, we don't need an else block.
-    "no-else-return": "error",
+    "no-else-return": "warn",
 
     // Avoid multiple spaces in the middle of lines.
-    "no-multi-spaces": "error",
+    "no-multi-spaces": "warn",
   }
 
 };

@@ -4,7 +4,7 @@ module.exports = {
   "rules": {
 
     // We use 2-space indentation.
-    "indent": ["error", 2],
+    "indent": ["warn", 2],
 
     // All quotes are allowed.
     "quotes": ["off"],
@@ -13,18 +13,18 @@ module.exports = {
     "semi": ["error", "always"],
 
     // Keep commas consistent between JS and JSON.
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["warn", "never"],
 
     // (foo) => { ... } and
     //  foo  => { ... } are permitted.
     "arrow-parens": "off",
 
     // Avoid [ 1 ] and foo[ 1 ]. Prefer [1].
-    "array-bracket-spacing": "error",
-    "computed-property-spacing": "error",
+    "array-bracket-spacing": "warn",
+    "computed-property-spacing": "warn",
 
     // Avoid {x}. Prefer { x }.
-    "block-spacing": "error",
+    "block-spacing": "warn",
 
     // Braces go on the line, not below it. Prefer:
     //
@@ -36,35 +36,35 @@ module.exports = {
     // foo
     // {
     // }
-    "brace-style": ["error", "stroustrup", { allowSingleLine: true }],
+    "brace-style": ["error", "1tbs", { allowSingleLine: true }],
 
     // useCamelCaseForVariables, not_underscores.
-    "camelcase": ["error", { properties: "always" }],
+    "camelcase": ["warn", { properties: "always" }],
 
     // If `this` needs to be aliased, use `self`.
-    "consistent-this": ["error", "self"],
+    "consistent-this": ["warn", "self"],
 
     // Use { key: "value" } for key spacing. (Not { key : "value" } or variants.)
-    "key-spacing": "error",
-    "object-curly-spacing": "error",
+    "key-spacing": "warn",
+    "object-curly-spacing": "warn",
 
     // Use `if (true)`, not `if(true)`. (This is for all keywords.)
-    "keyword-spacing": "error",
+    "keyword-spacing": "warn",
 
     // Enforce a space after a semicolon.
-    "semi-spacing": ["error", { after: true }],
+    "semi-spacing": ["warn", { after: true }],
 
     // Enforce a space after a comment.
-    "spaced-comment": "error",
+    "spaced-comment": "warn",
 
     // Prefer `() => foo()` to `() => { return foo() }`.
-    "arrow-body-style": "error",
+    "arrow-body-style": "warn",
 
     // Prefer `() => {}` to `()=>{}`.
-    "arrow-spacing": "error",
+    "arrow-spacing": "warn",
 
     // Prefer `${foo}` over `${ foo }`.
-    "template-curly-spacing": "error",
+    "template-curly-spacing": "warn",
   }
 
 };
