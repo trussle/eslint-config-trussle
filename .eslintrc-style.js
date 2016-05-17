@@ -46,7 +46,7 @@ module.exports = {
 
     // Use { key: "value" } for key spacing. (Not { key : "value" } or variants.)
     "key-spacing": "warn",
-    "object-curly-spacing": "warn",
+    "object-curly-spacing": ["warn", "always"],
 
     // Use `if (true)`, not `if(true)`. (This is for all keywords.)
     "keyword-spacing": "warn",
