@@ -30,6 +30,17 @@ module.exports = {
 
 ESLint allows nested configuration, allowing you to choose different configurations for your tests, server-side and client-side code. Check out [their website](http://eslint.org/docs/user-guide/configuring#using-configuration-files) for documentation.
 
+## Migrating Older Code
+
+For older code, you probably only want rules around correctness, rather than style. To do this, all you need to do is change the `extends`:
+
+```js
+module.exports = {
+  extends: "./node_modules/trussle-eslint/.eslintrc.js"
+  // ...
+};
+```
+
 ## Changing the Rules
 
 - Have a good reason for changing the rule, and write it as a comment near the rule in `.eslint.js`.
