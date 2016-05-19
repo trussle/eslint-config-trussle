@@ -32,7 +32,15 @@ module.exports = {
     // Don't allow use of a variable before it is defined.
     // This stops us using the hoisting nature of JavaScript
     // to fix our sloppy coding.
-    "no-use-before-define": "error",
+    //
+    // We make an allowance for functions; they are hoisted,
+    // but allows us to write code from "least detailed to most"
+    // in code:
+    //
+    // function doSteps() { step1(); step2(); step3(); }
+    // function step1() { ... }
+    // ...
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
 
     // Only allow require() statements to be made in the global scope.
     // Ideally these are placed at the top of the file and not anywhere else.
@@ -61,7 +69,7 @@ module.exports = {
     // x
     //
     // over
-    // 
+    //
     // x ? true : false
     "no-unneeded-ternary": "warn",
 
