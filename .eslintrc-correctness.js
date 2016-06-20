@@ -82,7 +82,7 @@ module.exports = {
     "prefer-arrow-callback": ["off"],
 
     // Allow `while (true)`.
-    "no-constant-condition": ["error", { checkLoops: false }],
+    "no-constant-condition": ["error", { checkLoops: false }]
 
   }
 };
