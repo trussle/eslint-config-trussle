@@ -42,7 +42,7 @@ module.exports = {
     // but it's probably a mistake.
     "no-sequences": "error",
 
-    // Disallow expressions that don't do something 
+    // Disallow expressions that don't do something
     // (with "use strict" etc. as exceptions).
     //
     // This usually points to a typo.
@@ -63,7 +63,7 @@ module.exports = {
     // 1. Are on Node, where console.log() is used for debugging/logging.
     // 2. Are using Browserify with a console.log()-stripping plugin.
     "no-console": ["off"],
-    
+
     // Enforcle Unix line endings.
     // This makes sure we don't make our production Linux machines angry.
     "linebreak-style": ["error", "unix"],
@@ -80,6 +80,9 @@ module.exports = {
     // For instance, it can be used to show that the function
     // doesn't need a `this`.
     "prefer-arrow-callback": ["off"],
-    
+
+    // Allow `while (true)`.
+    "no-constant-condition": ["error", { checkLoops: false }],
+
   }
 };
