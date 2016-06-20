@@ -1,5 +1,7 @@
 # ESLint Configuration for Trussle
 
+[![npm version](https://badge.fury.io/js/trussle-eslint.svg)](https://badge.fury.io/js/trussle-eslint)
+
 This repository collects a bunch of standard [ESLint](http://eslint.org/) files for Trussle repositories.
 
 ## Usage
