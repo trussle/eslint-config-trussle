@@ -7,7 +7,7 @@ This repository collects a bunch of standard [ESLint](http://eslint.org/) files 
 Add the package to your devDependencies:
 
 ```sh
-npm install --save-dev git+ssh://git@bitbucket.org:teamtrussle/trussle-eslint.git
+npm install --save-dev trussle-eslint
 ```
 
 Next, create a file `eslintrc.js` in the root directory of your project pointing to the coding standard:
@@ -34,7 +34,7 @@ ESLint allows nested configuration, allowing you to choose different configurati
 
 ## Migrating Older Code
 
-For older code, you probably only want rules around correctness, rather than style. To do this, all you need to do is change the `extends`:
+For older (ES5) code, you probably only want rules around correctness, rather than style. To do this, all you need to do is change the `extends`:
 
 ```js
 module.exports = {
