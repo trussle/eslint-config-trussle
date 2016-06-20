@@ -79,10 +79,6 @@ module.exports = {
     // There are sometimes uses for `function`.
     // For instance, it can be used to show that the function
     // doesn't need a `this`.
-    "prefer-arrow-callback": ["off"],
-
-    // Allow `while (true)`.
-    "no-constant-condition": ["error", { checkLoops: false }]
-
+    "prefer-arrow-callback": ["off"]
   }
 };
