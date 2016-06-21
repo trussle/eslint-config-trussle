@@ -1,6 +1,6 @@
 # ESLint Configuration for Trussle
 
-[![npm version](https://badge.fury.io/js/trussle-eslint.svg)](https://badge.fury.io/js/trussle-eslint)
+[![npm version](https://badge.fury.io/js/eslint-config-trussle.svg)](https://badge.fury.io/js/eslint-config-trussle)
 
 This repository collects a bunch of standard [ESLint](http://eslint.org/) files for Trussle repositories.
 
@@ -9,7 +9,7 @@ This repository collects a bunch of standard [ESLint](http://eslint.org/) files 
 Add the package to your devDependencies:
 
 ```sh
-npm install --save-dev trussle-eslint
+npm install --save-dev eslint-config-trussle
 ```
 
 Next, create a file `eslintrc.js` in the root directory of your project pointing to the coding standard:
@@ -17,7 +17,7 @@ Next, create a file `eslintrc.js` in the root directory of your project pointing
 ```js
 
 module.exports = {
-  extends: "./node_modules/trussle-eslint/.eslintrc.js",
+  extends: "trussle",
 
   // You will need to set up an environment:
   // see http://eslint.org/docs/user-guide/configuring#specifying-environments
@@ -40,7 +40,7 @@ For older (ES5) code, you probably only want rules around correctness, rather th
 
 ```js
 module.exports = {
-  extends: "./node_modules/trussle-eslint/.eslintrc.js"
+  extends: "./node_modules/eslint-config-trussle/.eslintrc.js"
   // ...
 };
 ```
