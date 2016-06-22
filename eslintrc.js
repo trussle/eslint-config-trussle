@@ -15,9 +15,9 @@ module.exports = {
 
   extends: [
     "eslint:recommended",
-    "./.eslintrc-style.js",
-    "./.eslintrc-readability.js",
-    "./.eslintrc-correctness.js"
+    "trussle/eslintrc-style",
+    "trussle/eslintrc-readability",
+    "trussle/eslintrc-correctness"
   ],
 
 };
