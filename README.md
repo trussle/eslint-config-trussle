@@ -12,7 +12,7 @@ Add the package to your devDependencies:
 npm install --save-dev eslint-config-trussle
 ```
 
-Next, create a file `eslintrc.js` in the root directory of your project pointing to the coding standard:
+Next, create a file `.eslintrc.js` in the root directory of your project pointing to the coding standard:
 
 ```js
 
@@ -36,14 +36,12 @@ ESLint allows nested configuration, allowing you to choose different configurati
 
 ## Migrating Older Code
 
-For older (ES5) code, you probably only want rules around correctness, rather than style. To do this, all you need to do is change the `extends`:
+For older (ES5) code, try the following:
 
-```js
-module.exports = {
-  extends: "./node_modules/eslint-config-trussle/.eslintrc.js"
-  // ...
-};
-```
+- Install eslint-config-trussle.
+- Fix any indentation issues you have with some [editor-fu](http://stackoverflow.com/questions/20675237/converting-spaces-to-tabs-in-multiple-files-sublime-text-2).
+- Run the auto-fixer with `eslint --fix .`
+- Fix the rest of the violations manually, either by fixing the issue or adding a special rule to your project.
 
 ## Changing the Rules
 
