@@ -57,12 +57,10 @@ module.exports = {
     // This enables lexical scoping (the way it should always have been...).
     "block-scoped-var": "error",
 
-    // console.log() is not an error.
-    //
     // In our system, we either:
-    // 1. Are on Node, where console.log() is used for debugging/logging.
+    // 1. Are on Node, we use trussle-logging for debugging/logging.
     // 2. Are using Browserify with a console.log()-stripping plugin.
-    "no-console": ["off"],
+    "no-console": ["warn"],
 
     // Enforcle Unix line endings.
     // This makes sure we don't make our production Linux machines angry.
