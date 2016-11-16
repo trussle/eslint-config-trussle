@@ -13,7 +13,7 @@
     "url": "github:trussle/eslint-config-trussle"
   },
   "scripts": {
-    "postinstall": "ln -sf ../../hooks/pre-push .git/hooks/pre-push",
+    "prepublish": "ln -sf ../../hooks/pre-push .git/hooks/pre-push",
     "test": "npm link && npm link eslint-config-trussle && echo '\nRunning ESLint: expect 1 warning...' && eslint example"
   }
 }
