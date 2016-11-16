@@ -7,13 +7,13 @@ module.exports = {
     "indent": ["warn", 2, {
 
       // Indent cases in a switch statement.
-      "SwitchCase": 2,
+      "SwitchCase": 1,
 
       // Indent properties of an object.
       //
       // doSomething()
       //   .then(() => doSomethingElse());
-      "MemberExpression": 2
+      "MemberExpression": 1
     }],
 
     // Always use semicolons.
