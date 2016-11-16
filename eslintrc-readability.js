@@ -140,8 +140,8 @@ module.exports = {
     // Avoid weird type conversions.
     "no-implicit-coercion": "warn",
 
-    // We should space our statements out (but not too much) for readability.
-    "max-statements": ["warn", 2],
+    // Statements on the end of lines can be missed.
+    "max-statements-per-line": ["warn", 2],
 
     // We have no need for tabs in our files!
     "no-tabs": "error",
