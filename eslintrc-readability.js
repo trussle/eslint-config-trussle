@@ -141,7 +141,7 @@ module.exports = {
     "no-implicit-coercion": "warn",
 
     // Statements on the end of lines can be missed.
-    "max-statements-per-line": ["warn", 2],
+    "max-statements-per-line": ["warn", { max: 2 }],
 
     // We have no need for tabs in our files!
     "no-tabs": "error",
