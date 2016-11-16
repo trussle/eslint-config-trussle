@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "eslintrc.js",
   "dependencies": {
-    "eslint": "^2.9.0"
+    "eslint": "^3.0.0"
   },
   "repository" : {
     "type" : "git",
