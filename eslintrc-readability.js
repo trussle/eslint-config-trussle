@@ -47,7 +47,7 @@ module.exports = {
     "global-require": "error",
 
     // Avoid callback hell.
-    "max-nested-callbacks": ["warn", 5],
+    "max-nested-callbacks": ["warn", 3],
 
     // If you're making something `new`-able,
     // use a capital letter.
@@ -60,9 +60,9 @@ module.exports = {
     // Avoid `else` with only an `if` in it. (Use `else if`!)
     "no-lonely-if": "warn",
 
-    // Nested ternary statements are useful, for example when setting ranges:
-    //   var roundup = (n < 100) ? 100 : (n < 1000) ? 1000 : n;
-    "no-nested-ternary": "off",
+    // Nested ternary statements are sometimes useful,
+    // but they shouldn't be encouraged.
+    "no-nested-ternary": "warn",
 
     // Tighten up ternaries if possible. Prefer:
     //
@@ -105,6 +105,9 @@ module.exports = {
     "space-unary-ops": "warn",
 
     // Avoid confusing functions unless bracketed.
+    //
+    // Use brackets if you hit this error:
+    //   x = y => (y > 10 ? true : false)
     "no-confusing-arrow": ["warn", { allowParens: true }],
 
     // Put all imports from a module on the same line.
@@ -122,6 +125,9 @@ module.exports = {
     // Avoid `var`: use `let` or `const` instead.
     "no-var": "warn",
 
+    // ...and prefer const over let.
+    "prefer-const": "warn",
+
     // Use template strings for concatenation.
     "prefer-template": "warn",
 
@@ -130,6 +136,18 @@ module.exports = {
 
     // Avoid multiple spaces in the middle of lines.
     "no-multi-spaces": "warn",
+
+    // Avoid weird type conversions.
+    "no-implicit-coercion": "warn",
+
+    // We should space our statements out (but not too much) for readability.
+    "max-statements": ["warn", 2],
+
+    // We have no need for tabs in our files!
+    "no-tabs": "error",
+
+    // Irregular spacing triggers OCD in some developers...
+    "no-multiple-empty-lines": ["warn", { max: 2 }]
   }
 
 };

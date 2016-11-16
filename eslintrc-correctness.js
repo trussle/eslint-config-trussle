@@ -52,7 +52,7 @@ module.exports = {
     //
     // We shouldn't forget about these comments,
     // and this rule means that we won't!
-    "no-warning-comments": ["warn", { terms: ["todo", "fixme"]}],
+    "no-warning-comments": ["warn", { terms: ["todo", "fixme"] }],
 
     // This enables lexical scoping (the way it should always have been...).
     "block-scoped-var": "error",
@@ -77,6 +77,49 @@ module.exports = {
     // There are sometimes uses for `function`.
     // For instance, it can be used to show that the function
     // doesn't need a `this`.
-    "prefer-arrow-callback": ["off"]
+    "prefer-arrow-callback": ["off"],
+
+    // Inconsistency between variable and function name
+    // can lead to confusion.
+    "func-name-matching": "error",
+
+    // Even if a developer knows their operator precendence,
+    // it's always good to make sure it does -exactly- what
+    // they want.
+    "no-mixed-operators": "error",
+
+    // This is often a typo; forcing "0." reduces the likelihood
+    // that is was.
+    "no-floating-decimal": "error",
+
+    // This is possibly useful for setting defaults:
+    // x = x || DEFAULT
+    // but more often than not it's a mistake.
+    "no-param-reassign": "warn",
+
+    // Make sure that, if you have a parameter called `err`,
+    // you actually use it.
+    "handle-callback-err": "error",
+
+    // Avoid loops that don't alter anything.
+    // (This is usually unintended.)
+    "no-unmodified-loop-condition": "error",
+
+    // Avoid long lists of parameters.
+    // (They're not easy to use: which order should I
+    // put my params?)
+    //
+    // FIXME: Make this more strict once we know it works.
+    "max-params": ["warn", 3],
+
+    // Ensure we throw Error objects, not just strings.
+    //
+    // FIXME: Make this more strict once we know it works in our code base.
+    "no-throw-literal": "warn",
+
+    // Avoid superfluous "use strict" statements.
+    //
+    // FIXME: When everything runs on Node 6+, turn this on.
+    "strict": "off"
   }
 };

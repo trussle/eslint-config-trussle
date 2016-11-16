@@ -4,16 +4,23 @@ module.exports = {
   "rules": {
 
     // We use 2-space indentation.
-    "indent": ["warn", 2],
+    "indent": ["warn", 2, {
 
-    // All quotes are allowed.
-    "quotes": ["off"],
+      // Indent cases in a switch statement.
+      "SwitchCase": 2,
+
+      // Indent properties of an object.
+      //
+      // doSomething()
+      //   .then(() => doSomethingElse());
+      "MemberExpression": 2
+    }],
 
     // Always use semicolons.
     "semi": ["error", "always"],
 
     // Keep commas consistent between JS and JSON.
-    "comma-dangle": ["warn", "never"],
+    "comma-dangle": ["error", "never"],
 
     // (foo) => { ... } and
     //  foo  => { ... } are permitted.
@@ -57,14 +64,14 @@ module.exports = {
     // Enforce a space after a comment.
     "spaced-comment": "warn",
 
-    // Prefer `() => foo()` to `() => { return foo() }`.
-    "arrow-body-style": "warn",
-
     // Prefer `() => {}` to `()=>{}`.
     "arrow-spacing": "warn",
 
     // Prefer `${foo}` over `${ foo }`.
     "template-curly-spacing": "warn",
+
+    // Because sometimes we forget.
+    "eol-last": "warn"
   }
 
 };

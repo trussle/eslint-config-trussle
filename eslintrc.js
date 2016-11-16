@@ -18,6 +18,6 @@ module.exports = {
     "trussle/eslintrc-style",
     "trussle/eslintrc-readability",
     "trussle/eslintrc-correctness"
-  ],
+  ]
 
 };
