@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-trussle",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "ESLint configuration for Trussle",
   "author": "Team Trussle",
   "license": "ISC",
@@ -8,9 +8,9 @@
   "dependencies": {
     "eslint": "^3.0.0"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "github:trussle/eslint-config-trussle"
+  "repository": {
+    "type": "git",
+    "url": "github:trussle/eslint-config-trussle"
   },
   "scripts": {
     "test": "npm link && npm link eslint-config-trussle && echo '\nRunning ESLint: expect 1 warning...' && eslint example"
