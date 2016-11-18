@@ -92,10 +92,16 @@ module.exports = {
     // that is was.
     "no-floating-decimal": "error",
 
-    // This is possibly useful for setting defaults:
+    // This is useful for setting defaults:
     // x = x || DEFAULT
-    // but more often than not it's a mistake.
-    "no-param-reassign": "warn",
+    // and providing a shorthand for dealing with dynamic types:
+    // function(stringOrError) {
+    //   if(!stringOrError.message) {
+    //     stringOrError = new Error(stringOrError);
+    //   }
+    //   ...
+    // }
+    "no-param-reassign": "off",
 
     // Make sure that, if you have a parameter called `err`,
     // you actually use it.
