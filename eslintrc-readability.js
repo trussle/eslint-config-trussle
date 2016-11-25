@@ -27,7 +27,7 @@ module.exports = {
     // and people know what it is.
     //
     // Magic numbers should be const'ed.
-    "no-magic-numbers": ["warn", { "ignore": [0, 1], "enforceConst": true }],
+    "no-magic-numbers": ["warn", { "ignore": [0, 1, 2], "enforceConst": true }],
 
     // Don't allow use of a variable before it is defined.
     // This stops us using the hoisting nature of JavaScript
